@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
+<<head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -39,14 +37,14 @@
         </div>
   </div>
   
-  <span onclick="openNav()" style="font-size: 20px;">&rightarrow;</span>
+  <span onclick="openNav()" style="font-size: 60px;">&rightarrow;</span>
   <p><h1 id="header-name">VC-STORES</h1></p>
 </div>
 
 <div class="firstcontainer">
     <p id="kieren">KIEREN</p>
     <p id="info">The most comfortable tops you'll ever wear</p>
-    <button type="button" id="button1">SHOP NOW</button>
+    <button type="button" id="button1"><p id="shopnow1">SHOP NOW</p></button>
 </div>
 </body>
 
@@ -54,7 +52,7 @@
 
 
 <style>
-    @media (width >900px){
+    @media (width >1150px){
         #button1{
             width:100px;
             height: 50px;
@@ -123,13 +121,13 @@
     }
 </style>
 <style>
-    @media (width >= 500px) and (width <899px){
+    @media (width >= 500px) and (width <1000px){
         .firstcontainer{
             background-image: ;
             width: auto;
             height: 70vh;
             background-image: url("https://images.unsplash.com/photo-1578346021958-c58829af708b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-            margin-top:35px ;
+            margin-top:100px ;
             background-position: 50% 50%;
             position: relative;
             background-size: cover;
@@ -152,9 +150,9 @@
             color: white;
         }
         #info{
-            margin-left: -52vw;
+            margin-left: -55vw;
             color: white;
-            margin-top: -8vh;
+            margin-top: -9vh;
             font-family: "Cormorant Garamond", serif;
         }
     body{
@@ -167,7 +165,7 @@
     #navbar{
         display: absolute;
         background-color: white;
-        height: 15vh;
+        height: 12vh;
         width:auto;
         bottom: 0;
         
@@ -240,38 +238,47 @@
     @media screen and (orientation:portrait) {
         .firstcontainer{
             width: auto;
-            height: 60vh;
+            height: 70vh;
             background-image: url("https://images.unsplash.com/photo-1578346021958-c58829af708b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
             margin-left: ;
            background-position: 50% 50%;
             position: relative;
             background-size: cover;
+            top: 0;
             
         }
         #kieren{
-            padding-top: 25vh;
+           
             font-family:"Instrument Serif", serif ;
-            font-size: 45px;
+            font-size: 170px;
             font-weight: 600;
-            margin-left: -50vw;
+            margin-left: -30vw;
             color: white;
+            padding-top: 45vh;
         }
         #info{
-            margin-left: 30px;
+            margin-left: 12vw;
             color: white;
-            margin-top: -6vh;
-            width: 150px;
+            margin-top:vh ;
+            font-size: 50px;
+            width: 450px;
             text-align: left;
             font-family: "Cormorant Garamond", serif;
         }
         #button1{
-            width:120px;
-            height: 40px;
+            width:40vw;
+            height: 110px;
             background-color: beige;
             color: black;
             font-family:"Instrument Serif", serif  ;
-            margin-left: -50vw;
+            margin-left: -35vw;
             border-color: inherit;
+            
+        }
+        #shopnow1{
+            font-size: 40px;
+            font-weight: 600;
+            margin-top:0.5cm ;
         }
         body{
         text-align: center;
@@ -281,7 +288,7 @@
     #navbar{
         display: flex;
         background-color: white;
-        height: 7vh;
+        height: 10px;
         width:auto;
     
     }
@@ -290,13 +297,15 @@
         font-family: "Poiret One", sans-serif;
         color: black;
         font-weight: 100;
-        padding-left: 30vw;
-        font-size: 20px;
+        padding-left: 25vw;
+        font-size: 70px;
         
         
     }
     span{
-        padding-top: 10px;
+        padding-top: 60px;
+        margin-left: 2vw;
+        
     }
     .sidebar.closebtn{
         position: absolute;
