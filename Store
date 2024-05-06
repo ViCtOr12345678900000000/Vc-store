@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Rajdhani:wght@300;400;500;600;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<title>VC-STORES</title>
+
+
+<body>
+<div id="navbar" class="sticky">
+    <div id="mysidenav" class="sidenav">
+      <div id="close" class="closebtn" onclick="closeNav()">&times;</a><br/></div>
+      <div class="firstlink">
+        <p><a href="">MUST HAVE</a></p>
+        <p><a href="">BOTTOM</a></p>
+        <p><a href="">TOPS</a></p>
+        <p><a href="">BASIC</a></p>
+        <p><a href="">NEW</a></p>
+        <p><a href="">EMBROIDED</a></p>
+        <p><a href="">CLEARANCE</a></p>
+        </div>
+  </div>
+  
+  <span onclick="openNav()" style="font-size: 20px;">&rightarrow;</span>
+  <p><h1 id="header-name">VC-STORES</h1></p>
+</div>
+
+<div class="firstcontainer">
+    <p id="kieren">KIEREN</p>
+    <p id="info">The most comfortable tops you'll ever wear</p>
+    <button type="button" id="button1">SHOP NOW</button>
+</div>
+</body>
+
+
+
+
+<style>
+    @media (width >900px){
+        #button1{
+            width:100px;
+            height: 50px;
+            background-color: beige;
+            color: black;
+            font-family:"Instrument Serif", serif  ;
+            margin-left: 50px;
+            border-color: inherit;
+        }
+        .firstcontainer{
+            width: auto;
+            height: 60vh;
+            background-image: url("https://images.unsplash.com/photo-1578346021958-c58829af708b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            margin-left: ;
+           background-position: 80% 50%;
+            position: relative;
+            background-size: ;
+            
+        }
+        #kieren{
+            padding-top: 30vh;
+            font-family:"Instrument Serif", serif ;
+            font-size: 45px;
+            font-weight: 600;
+            padding-left: 50px;
+            color: white;
+        }
+        #info{
+            padding-left: 50px;
+            color: white;
+            margin-top: -8vh;
+            font-family: "Cormorant Garamond", serif;
+        }
+        #navbar{
+            display: flex;
+            justify-content: ;
+            background-color: white;
+        color: black;
+        padding-top: 20px;
+            
+        }
+        #navbar a{
+            font-family: "Instrument Serif", serif ;
+            color: black;
+            padding-inline: ;
+            margin-left:15px ;
+        }
+        .firstlink{
+            padding-left: 500px;
+            display: flex;
+            margin-top: -15px;
+            
+        }
+        #close{
+            margin-left:-10vw ;
+        }
+        span{
+            margin-left: -100vw;
+        }
+       #header-name{
+        margin-top: 10px;
+        font-family:"Poiret One", sans-serif ;
+        margin-left: 40vw;
+        font-weight: 100;
+       }
+    }
+</style>
+<style>
+    @media (width >= 500px) and (width <899px){
+        .firstcontainer{
+            background-image: ;
+            width: auto;
+            height: 70vh;
+            background-image: url("https://images.unsplash.com/photo-1578346021958-c58829af708b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            margin-top:35px ;
+            background-position: 50% 50%;
+            position: relative;
+            background-size: cover;
+        }
+        #button1{
+            width:70px;
+            height: 40px;
+            background-color: beige;
+            color: black;
+            font-family:"Instrument Serif", serif  ;
+            margin-left: -76vw;
+            border-color: inherit;
+        }
+        #kieren{
+            padding-top: 20vh;
+            font-family:"Instrument Serif", serif ;
+            font-size: 45px;
+            font-weight: 600;
+            margin-left: -70vw;
+            color: white;
+        }
+        #info{
+            margin-left: -52vw;
+            color: white;
+            margin-top: -8vh;
+            font-family: "Cormorant Garamond", serif;
+        }
+    body{
+        margin: 0;
+        text-align: center;
+        
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+    #navbar{
+        display: absolute;
+        background-color: white;
+        height: 15vh;
+        width:auto;
+        bottom: 0;
+        
+    }
+    #header-name{
+        position: ;
+        font-family: "Poiret One", sans-serif;
+        color: black;
+        font-weight: 100;
+        
+        
+    }
+    .sidebar.closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50%;
+    }
+    .sidenav a {
+        
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        font-family: "Instrument Serif", serif;
+    }
+    .sidenav a:hover{
+        color: white;
+    }
+    .sidebar.closebtn{
+        transition: 0.5s ease;
+    }
+    .sidenav{
+        height: 100%;
+        width: 0;
+        position:fixed;
+        z-index:6;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top:60px;
+        transition: 0.5s;
+        
+    }
+}
+</style>
+<script>
+    function openNav(){
+        document.getElementById("mysidenav").style.width="100%";
+        document.getElementById("mysidenav").style.backgroundColor="White";
+        document.getElementById("mysidenav").style.
+        document.getElementById("mysidenav").style.opacity="0.99";
+        document.getElementById("main").style.marginLeft="250px";
+        
+    }
+    function closeNav(){
+        document.getElementById("mysidenav").style.width="0";
+        document.getElementById("main").style.marginLeft="0";
+        
+    }
+  </script>
+
+
+
+
+<style>
+    @media screen and (orientation:portrait) {
+        .firstcontainer{
+            width: auto;
+            height: 60vh;
+            background-image: url("https://images.unsplash.com/photo-1578346021958-c58829af708b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            margin-left: ;
+           background-position: 50% 50%;
+            position: relative;
+            background-size: cover;
+            
+        }
+        #kieren{
+            padding-top: 25vh;
+            font-family:"Instrument Serif", serif ;
+            font-size: 45px;
+            font-weight: 600;
+            margin-left: -50vw;
+            color: white;
+        }
+        #info{
+            margin-left: 30px;
+            color: white;
+            margin-top: -6vh;
+            width: 150px;
+            text-align: left;
+            font-family: "Cormorant Garamond", serif;
+        }
+        #button1{
+            width:120px;
+            height: 40px;
+            background-color: beige;
+            color: black;
+            font-family:"Instrument Serif", serif  ;
+            margin-left: -50vw;
+            border-color: inherit;
+        }
+        body{
+        text-align: center;
+        background-position: 50% 50%;
+        background-size:;
+    }
+    #navbar{
+        display: flex;
+        background-color: white;
+        height: 7vh;
+        width:auto;
+    
+    }
+    #header-name{
+        position: ;
+        font-family: "Poiret One", sans-serif;
+        color: black;
+        font-weight: 100;
+        padding-left: 30vw;
+        font-size: 20px;
+        
+        
+    }
+    span{
+        padding-top: 10px;
+    }
+    .sidebar.closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50%;
+    }
+    .sidenav a {
+        padding :10px 10px 10px 10px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        font-family: "Instrument Serif", serif;
+    }
+    .sidenav a:hover{
+        color: white;
+    }
+    .sidebar.closebtn{
+        transition: 0.5s ease;
+    }
+    .sidenav{
+        height: 100%;
+        width: 0;
+        position:fixed;
+        z-index:6;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top:60px;
+        transition: 0.5s;
+        
+    }
+    }
+</style>
