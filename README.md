@@ -1,7 +1,7 @@
 <body id="background-change">
     <h1 class="welcome-text">Welcome!</h1>
     <div class="enter">
-        <form action="store" target="_blank">
+        <form action="Store" target="_blank">
         <button type="submit" >Enter</button>
         </form>
     </div>
