@@ -476,10 +476,10 @@
         <p> <img style="width:15px; height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/plane-white.svg?v=1671353417"> WE SHIP WORLD WIDE</p>
     </div>
     <div id="firstcnt">
-        <p><img style="max-width:15px; max-height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/refund_white.svg?v=1671353418">90 DAYS MONEY BACK GURANTEE</p>
+        <p><img style="width:15px; height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/refund_white.svg?v=1671353418">90 DAYS MONEY BACK GURANTEE</p>
     </div>
     <div id="firstcnt">
-        <p><img style="max-width:15px; max-height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/verified_white.svg?v=1671353417">100% SECURE CHECKOUT</p>
+        <p><img style="width:15px; height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/verified_white.svg?v=1671353417">100% SECURE CHECKOUT</p>
     </div>
 </div>
 <!--For three container-->
@@ -510,6 +510,69 @@
     }
 </style>
 
+
+
+<div style="font-family:Oswald, serif ;" class="final">
+    <div class="shop">
+        <p>SHOP</p>
+        <div class="link">
+        <a href="">Must Have</a>
+        <a href="">Bottoms</a>
+        <a href="">Tops</a>
+        <a href="">Basic</a>
+        <a href="">Embroided</a>
+        <a href="">NEW</a>
+        <a href="">Clearance</a>
+    </div>
+    </div>
+    <div style="font-family:Oswald, serif ;"  class="quicklinks">
+        <p>QUICK LINK</p>
+        <div class="link">
+        <a href="">Track Order</a>
+        <a href="">FAQs</a>
+        <a href="">Contact Us</a>
+        </div>
+    </div>
+    <div style="font-family:Oswald, serif ;"  class="more">
+        <p>MORE</p>
+        <div class="link">
+        <a href="">About VC-STORES</a>
+        <a href="">Blog</a>
+        <a href="">Shop the look</a>
+        <a href="">Customer Reviews</a>
+        </div>
+    </div>
+    <div class="main">
+    <div class="signup">
+        <p>Sign Up And Get 10% Free</p>
+        <form target="_blank" class="input-container">
+            <input class="emailbox" type="text" id="search" name="q" placeholder="Enter Email Here" ><button type="submit">&rightarrow;</button>
+        </form>
+    </div>
+    <div class="follow">
+        <p>FOLLOW US</p>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=118468&format=png&color=000000"></a>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000"></a>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=84521&format=png&color=000000" alt=""></a>
+        <a href=""><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000"></a>
+
+    </div>
+    </div>
+</div>
+<style>
+    .final{
+        background-color: beige;
+        width: auto;
+        height: 70vh;
+        color: black;
+        position: relative;
+        margin-top: 1vh;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+        column-gap: 15vw;
+    }
+</style>
 
 
 </body>
@@ -956,6 +1019,31 @@
 
 <style>
     @media screen and (orientation:portrait) {
+        .shop p, .quicklinks p, .more p{
+            font-size: 40px;
+        }
+    .link{
+        display: grid;
+        row-gap: 10px;
+    }
+    .link a{
+        color: black;
+    }
+.final{
+    display: grid;
+    
+}
+        .threecnt{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #firstcnt{
+            width: 100vw;
+            height: 5vh;
+        }
+        #firstcnt p{
+            font-size: 30px;
+        }
 
         .input-container input{
         border-right: none;
@@ -1009,12 +1097,7 @@
     
     
         
-        #sticky {
-  position: sticky;
-  top: 1vh;
-  height: 30vh;
-  
-}
+ 
 
 .comment1{
     width: 85vw;
@@ -1297,10 +1380,61 @@
     }
 </style>
 
-
-<!--landscape-->
 <style>
         @media screen and (orientation:landscape){
+            #sticky{
+                position: relative;
+                padding-top: 40vh;
+            }
+            .follow img{
+                width: 40px;
+                height: 40px;
+                background-color: ;
+            }
+            .shop{
+                display: grid;
+                margin-bottom: 20vh;
+                padding-bottom: 10vh;
+                
+            }
+            .link{
+                text-decoration: ;
+                color: black;
+                font-weight: 100;
+                display: grid;
+                padding-top: 2vh;
+                opacity: ;
+            }
+            .link a{
+                text-decoration: none;
+                color: black;
+            }
+            .link a:hover{
+                text-decoration: underline;
+                opacity: 1.0;
+            }
+            .quicklinks{
+                display: grid;
+                margin-bottom: 35vh;
+                padding-bottom: 10vh;
+                
+            }
+            .quicklinks a{
+                text-decoration: ;
+                color: black;
+                font-weight: 100;
+            }
+            .more{
+                display: grid;
+                margin-bottom: 30vh;
+                padding-bottom: 10vh;
+            }
+            .more a{
+                text-decoration: ;
+                color: black;
+                font-weight: 100;
+            }
+            
             .text{
                 margin-top: 10vh;
             }
