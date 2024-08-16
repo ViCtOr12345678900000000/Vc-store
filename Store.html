@@ -22,6 +22,25 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
+<script>
+    const revealTexts = document.querySelectorAll('.reveal-text');
+  revealTexts.forEach(text => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          text.classList.add('in-view');
+        } else {
+          text.classList.remove('in-view');
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px 100px 0px', // Adjust margin for reveal distance
+      threshold: parseFloat(text.dataset.threshold) || 0.1 // Use data-threshold attribute or default
+    });
+    observer.observe(text);
+  });
+  </script>
 <title>VC-STORES</title>
 
 
@@ -74,7 +93,7 @@
         color: brown;
         width: auto;
         height: 100px;
-        font-family:"Instrument Serif", serif  ;
+        font-family:"Oswald", serif  ;
         text-align: center;
         font-size: 20px;
         margin-top: 11vh;
@@ -361,7 +380,7 @@
         background-size: cover;
     }
     .c8{
-        background-image: url("https://media.istockphoto.com/id/1425253110/photo/portrait-of-young-handsome-stylish-black-man-with-natural-hair-afro-dreadlocks-afroamerican.jpg?s=612x612&w=0&k=20&c=oTXWhw6KqJr6y36y4O0KB6HVwB0CiWr1GoGunYCsaYA=");
+        background-image: url("https://assets.covet.pics/postassets/17058025/4da43d8ebdae19e8e4129d8152a19657");
         background-size: cover;
     }
     .c1:hover{
@@ -403,7 +422,92 @@
 
 
 
+<div class="unlock">
+    <div class="text">
+        <p id="text1">Unlock 10% Savings</p>
+        <p id="text2">Stay In The Loop + Enjoy 10% Off Your First Order</p>
+        <form target="_blank" class="input-container">
+            <input class="emailbox" type="text" id="search" name="q" placeholder="Enter Email Here" ><button type="submit">&rightarrow;</button>
+        </form>
+    </div>
+</div>
+<!--Style for  unlock 10%-->
+<style>
+    .input-container input{
+        border-right: none;
+        border-color: white;
+        border: 1px;
+    }
+    .input-container button{
+        border-left: none;
+        height: 30px;
+        border: 1px white;
+        background-color: ;
+    }
+    .input-container button:hover{
+        cursor: pointer;
+    }
+    .unlock{
+        margin-top: 20vh;
+        background-color: burlywood;
+        width: auto;
+        height: 20vw;
+        position: relative;
+    }
+    #text1{
+        font-family: "Instrument Serif", serif;
+        font-size: 35px;
+    }
+    #text2{
+        font-family:"Cormorant Garamond", serif ;
+    }
+    .emailbox{
+        height: 30px;
+    }
+    ::placeholder{
+        text-align: center;
+        font-family:"Cormorant Garamond", serif ;
+    }
+</style>
 
+<div class="threecnt">
+    <div id="firstcnt">
+        <p> <img style="width:15px; height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/plane-white.svg?v=1671353417"> WE SHIP WORLD WIDE</p>
+    </div>
+    <div id="firstcnt">
+        <p><img style="max-width:15px; max-height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/refund_white.svg?v=1671353418">90 DAYS MONEY BACK GURANTEE</p>
+    </div>
+    <div id="firstcnt">
+        <p><img style="max-width:15px; max-height:15px;" src="https://cdn.shopify.com/s/files/1/2714/3176/files/verified_white.svg?v=1671353417">100% SECURE CHECKOUT</p>
+    </div>
+</div>
+<!--For three container-->
+<style>
+    .threecnt{
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        column-gap: 5px;
+        margin-top: 5px;
+    }
+    #firstcnt{
+        background-color: black;
+        width: 33.3vw;
+        height: 12vh;
+        color: white;
+        text-align: center;
+        align-content: center;
+        font-family:"Oswald", serif ;
+        font-size: 20px;
+    }
+    #firstcnt img{
+        padding-right: 40px;
+        padding-top: ;
+    }
+    #firstcnt p{
+        padding-top:  ;
+    }
+</style>
 
 
 
@@ -520,7 +624,7 @@
         }
         #button1{
             width:100px;
-            height: 50px;
+            height: 30px;
             background-color: beige;
             color: black;
             font-family:"Instrument Serif", serif  ;
@@ -742,7 +846,7 @@
         }
         #button1{
             width:70px;
-            height: 40px;
+            height: 30px;
             background-color: beige;
             color: black;
             font-family:"Instrument Serif", serif  ;
@@ -851,6 +955,27 @@
 
 <style>
     @media screen and (orientation:portrait) {
+        .input-container input{
+        border-right: none;
+        border-color: white;
+        border: 1px;
+    }
+    .input-container button{
+        border-left: none;
+        height: 30px;
+        border: 1px white;
+        background-color: ;
+    }
+    .input-container button:hover{
+        cursor: pointer;
+    }
+        .unlock{
+        margin-top: 315vh;
+        background-color: burlywood;
+        width: auto;
+        height: 50vw;
+        position: relative;
+    }
         .notforshop{
         background-color: white;
         height: 410vh;
@@ -1063,12 +1188,12 @@
             font-weight: 600;
             margin-left: -30vw;
             color: white;
-            padding-top: 45vh;
+            padding-top: 40vh;
         }
         #info{
             margin-left: 12vw;
             color: white;
-            margin-top:vh ;
+            margin-top: ;
             font-size: 50px;
             width: 450px;
             text-align: left;
@@ -1076,7 +1201,7 @@
         }
         #button1{
             width:40vw;
-            height: 110px;
+            height: 70px;
             background-color: beige;
             color: black;
             font-family:"Instrument Serif", serif  ;
@@ -1158,8 +1283,19 @@
 </style>
 
 
+<!--landscape-->
 <style>
         @media screen and (orientation:landscape){
+            .text{
+                margin-top: 10vh;
+            }
+            .unlock{
+        margin-top: 35vh;
+        background-color: burlywood;
+        width: auto;
+        height: 30vw;
+        position: relative;
+    }
             #button1{
             width:100px;
             height: 50px;
