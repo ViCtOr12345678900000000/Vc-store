@@ -219,7 +219,7 @@
         </div>
         <div class="text" style="background-color: white;">
             <p id="star">★★★★★</p>
-            <p id="comment1">Extremly comfortable pants that you can wear to bum around the home, or pair them with a decent shirt and head out</p>
+            <p class="comment1" id="comment1">Extremly comfortable pants that you can wear to bum around the home, or pair them with a decent shirt and head out</p>
             <p id="name1"><i>-James.J-</i></p>
         </div>
     </div>
@@ -279,7 +279,7 @@
    
 
 
-<div class="container1">
+<div style="z-index: 3;" class="container1">
     <p style="color: black; font-size: 50px; font-family:Poiret One, sans-serif ; text-align: center;" id="shopthefeed">Shop The Feed<br/> @VC-STORES</p>
     <div class="notforshop">
     <div class="c11">
@@ -350,6 +350,7 @@
         background-color: inherit;
         overflow: hidden;
         transition: 0.3s ease-in-out;
+        z-index: 3;
     }
     .c1{
         background-image: url("https://assets.covet.pics/postassets/17046557/a1488ee840a4f4638b9b99596cd1c668");
@@ -955,6 +956,7 @@
 
 <style>
     @media screen and (orientation:portrait) {
+
         .input-container input{
         border-right: none;
         border-color: white;
@@ -987,7 +989,8 @@
         row-gap: 10px;
     }
     .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8{
-        width: auto;
+        width: 100vw;
+        padding: 10px;
         height: 100vh;
         background-color: inherit;
         overflow: hidden;
@@ -1009,6 +1012,12 @@
         #sticky {
   position: sticky;
   top: 1vh;
+  z-index: 1;
+}
+.comment1{
+    width: 85vw;
+    margin-left: 10vw;
+    
 }
         #ntword1{
             padding-top: 2vh;
